@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Filename Generator | HTML CSS JS</title>
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90' fill='gold'>A</text></svg>"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="Filename Generator | HTML CSS JS" />
+    <!-- Primary Meta Tags -->
+    <meta name="author" content="Dus Mamud" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>File Name Generator</h1>
+        <p>Generate file names for your web projects</p>
+      </div>
+
+      <div class="input-group">
+        <label for="input-text">Enter Page Name</label>
+        <input
+          type="text"
+          id="input-text"
+          placeholder="Example: about, contact, home"
+          aria-label="Enter page name"
+        />
+        <div id="error-message" class="error hidden">
+          Please enter at least 2 characters
+        </div>
+      </div>
+
+      <button id="generate-btn" class="generate-btn">
+        Generate File Names
+      </button>
+
+      <div id="results" class="results">
+        <div class="file-list" id="file-list"></div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
